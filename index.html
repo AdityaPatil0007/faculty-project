@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@300;900&family=Poppins:wght@500&family=Sacramento&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <script>
+        const customCursor = document.querySelector('.custom-cursor');
+
+        document.addEventListener('mousemove', (e) =>
+        {
+            const x = e.clientX;
+            const y = e.clientY;
+            customCursor.style.transform = `translate(${x}px, ${y}px)`;
+        });
+    </script>
+</head>
+
+<body>
+    <!-- <div class="custom-cursor"></div> -->
+    <div class="container">
+        <div class="main">
+
+            <nav>
+                <ul>
+                    <li class="nav-item" data-tab="about-me">About Me </li>
+                    <li class="nav-item" data-tab="activities"> Activities</li>
+                    <li class="nav-item" data-tab="achievements">Achievements</li>
+                    <li class="nav-item" data-tab="academics">Academics</li>
+                </ul>
+            </nav>
+            <div class="profile">
+                <img id="profile_pic"
+                    src="https://moderncoe.edu.in/images/MecEng/facultyDetails/PROF.-(DR.)-SAMEER-Y.-BHOSALE.jpg" alt=""
+                    srcset="">
+                <div class="info">
+                    <h2>Prof. Dr. S. Y. Bhosale </h2>
+                    <h4> HOD OF MECHANICAL ENGINEERING </h4>
+                </div>
+            </div>
+            <div class="details" id="tab-content">
+                <div class="about-me tab" id="about-me">
+                    <h3> About Me </h3>
+                    <h2>  HOD  </h2>
+                    <h2>  Ph.D. Mechanical Engineering </h2>
+                        <h2> M.E. (HEAT POWER) </h2>
+                        <h2> B.E. (MECHANICAL) </h2>
+
+                </div>
+                <div class="activities tab" id="activities">
+                    <h3> Activities </h3>
+                    <h2>Area of Research Interest:-</h2>
+                     <h2>  Heat Transfer</h2>
+
+
+                </div>
+                <div class="achievements tab" id="achievements">
+                    <h3> Achievements </h3>
+                    <h2>Recipient of Best Teacher Award from P.E. Society in the year 2011</h2>
+                    <h2>FE admission in charge</h2>
+                      <h2>Author of Two Books referred By Pune University students Heat Transfer and
+                        Theory of Machines</h2>
+                        <h2>25 papers published in national and international journals of repute</h2>
+                </div>
+                <div class="academics tab" id="academics">
+                    <h3> Academics </h3>
+                    
+                        <h2> HOD Mechanical 7 Years</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
